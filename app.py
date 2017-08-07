@@ -26,7 +26,9 @@ async def icon(request):
     url_base = f'{o.scheme}://{o.netloc}'
     # 先取favicon
     favicon_url = f'{url_base}/favicon.ico'
-    async with aiohttp.ClientSession() as session:
+
+    conn = aiohttp.TCPConnector(verify_ssl=False)
+    async with aiohttp.ClientSession(connector=conn) as session:
         async with session.get(favicon_url) as resp:
             if is_image_response(resp):
                 return json({"url": favicon_url})
