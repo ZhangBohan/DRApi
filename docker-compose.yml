@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: python app.py
+    volumes:
+      - .:/code
+    ports:
+      - "8800:8000"
