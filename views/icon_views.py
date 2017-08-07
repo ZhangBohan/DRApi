@@ -5,7 +5,7 @@ from sanic import Blueprint
 from lxml import html
 import aiohttp
 
-bp = Blueprint('icon_blueprint', url_prefix='/icon')
+bp = Blueprint('icon_blueprint')
 
 
 @bp.route('/')

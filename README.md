@@ -15,3 +15,18 @@ response favion url if found an url for this page
 ```
 {"url": "http://sanic.readthedocs.io/favicon.ico"}
 ```
+
+## Get data QR code
+
+```
+GET /qrcode?data=balabala
+```
+
+OR
+
+```
+POST /qrcode
+{"foo": "bar"}
+```
+
+response qrcode image
