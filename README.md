@@ -5,7 +5,7 @@ Don't repeat API offer some useful APIs.
 ## Get website favion API
 
 ```
-GET /icon?url=http://sanic.readthedocs.io/en/latest/sanic/routing.html#request-parameters
+GET http://drapi.bohanzhang.com/icon?url=http://sanic.readthedocs.io/en/latest/sanic/routing.html#request-parameters
 ```
 
 - `url`: target page url
@@ -19,7 +19,7 @@ response favion url if found an url for this page
 ## Get data QR code
 
 ```
-GET /qrcode?data=balabala
+GET http://drapi.bohanzhang.com/qrcode?data=https://www.baidu.com
 ```
 
 OR
